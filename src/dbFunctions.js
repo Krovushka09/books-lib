@@ -1,3 +1,6 @@
+//функция сортировки книг по параметру.
+//Функция принимает массив книг: books и параметр: param
+
 function getSortedData(books, param) {
     let listParams = books.map((book) => book[param]);
     let sortParams = new Set(listParams.sort((a, b) => (a > b ? 1 : -1)));
